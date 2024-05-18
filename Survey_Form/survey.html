@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Registration Survey</h1>
+<p id="description">Please fill out the following information to help us understand yourm background and goals.</p>
+    <form id="survey-form" method="post" action="#">
+    <h2>Personal Information</h2>
+    <label id="name-label" for ="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
+    <label id="email-label" for ="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email address" required>
+
+    <label id="number-label" for ="number">Age (optional)</label>
+    <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your age">
+<h2>Current Status</h2>
+<label for="dropdown">What best describes your current professional status</label>
+<select id="dropdown" name="current-status">
+  <option value="it-employed">Employed in IT</option>
+  <option value="non-it-employed">Employed in a non-IT field</option>
+  <option value="student">Student</option>
+  <option value="freelancer">Freelancer</option>
+  <option value="unemployed">Unemployed</option>
+   <option value="Other">other</option>
+</select>
+<h2>Career Transition Goals</h2>
+<label>What are your career transition goals?</label>
+<div>
+  <input type="radio" id="goal1" name="career-goal"value="full-stack-developer">
+  <label for="goal1">Transitioning to IT as a Full Stack Developer</label>
+</div>
+<div>
+  <input type="radio" id="goal2" name="career-goal" value="enhance-skills">
+  <label for="goal2">Enhancing skills in current IT role</label>
+</div>
+<label>What are your main motivations for transitioning into IT?(Select all that apply)</label>
+<div>
+  <input type="checkbox" id="motivation1" name="motivations" value="career-growth">
+  <label for="motivation1">Career growth opportunities</label>
+</div>
+<div>
+  <input type="checkbox" id="motivation2" name="motivations" value="higher-salary">
+  <label for="motivation2">Higher salary potential</label>
+</div>
+<h2>Additional Comments</h2>
+<label for="additional-comments">Please share any additional comments:</label>
+<textarea id="additional-comments" name="additional-comments" placeholder="Enter your comments"></textarea>
+<button type="submit" id="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
